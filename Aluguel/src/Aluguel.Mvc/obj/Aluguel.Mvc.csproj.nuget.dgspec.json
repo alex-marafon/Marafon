@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Trut4's\\source\\repos\\Marafon\\Aluguel\\src\\Aluguel.Mvc\\Aluguel.Mvc.csproj": {}
+    "C:\\Users\\alex.marafon\\source\\repos\\Marafon\\Aluguel\\src\\Aluguel.Mvc\\Aluguel.Mvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Trut4's\\source\\repos\\Marafon\\Aluguel\\src\\Aluguel.Mvc\\Aluguel.Mvc.csproj": {
+    "C:\\Users\\alex.marafon\\source\\repos\\Marafon\\Aluguel\\src\\Aluguel.Mvc\\Aluguel.Mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Trut4's\\source\\repos\\Marafon\\Aluguel\\src\\Aluguel.Mvc\\Aluguel.Mvc.csproj",
+        "projectUniqueName": "C:\\Users\\alex.marafon\\source\\repos\\Marafon\\Aluguel\\src\\Aluguel.Mvc\\Aluguel.Mvc.csproj",
         "projectName": "Aluguel.Mvc",
-        "projectPath": "C:\\Users\\Trut4's\\source\\repos\\Marafon\\Aluguel\\src\\Aluguel.Mvc\\Aluguel.Mvc.csproj",
-        "packagesPath": "C:\\Users\\Trut4's\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Trut4's\\source\\repos\\Marafon\\Aluguel\\src\\Aluguel.Mvc\\obj\\",
+        "projectPath": "C:\\Users\\alex.marafon\\source\\repos\\Marafon\\Aluguel\\src\\Aluguel.Mvc\\Aluguel.Mvc.csproj",
+        "packagesPath": "C:\\Users\\alex.marafon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alex.marafon\\source\\repos\\Marafon\\Aluguel\\src\\Aluguel.Mvc\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Trut4's\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alex.marafon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
