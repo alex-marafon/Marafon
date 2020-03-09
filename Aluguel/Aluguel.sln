@@ -3,9 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Aplicacao", "1-Aplicacao", "{71BCD2AA-572E-4BFC-AE32-9E787A7149E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Apresentacao", "2-Apresentacao", "{9A3543D0-E80E-4061-8686-7598325A80BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Dominio", "3-Dominio", "{4236EAA2-92EA-4AE9-BA11-CAAF381EFF7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infra", "4-Infra", "{4AD11328-002F-4650-9DC0-C03D80FD3A8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aluguel.Mvc", "src\Aluguel.Mvc\Aluguel.Mvc.csproj", "{8B3D145B-1D52-4E54-8CC1-C14788B6B49F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B3D145B-1D52-4E54-8CC1-C14788B6B49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3D145B-1D52-4E54-8CC1-C14788B6B49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3D145B-1D52-4E54-8CC1-C14788B6B49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3D145B-1D52-4E54-8CC1-C14788B6B49F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B3D145B-1D52-4E54-8CC1-C14788B6B49F} = {71BCD2AA-572E-4BFC-AE32-9E787A7149E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4818E880-E488-4A86-9022-B858993997AC}
