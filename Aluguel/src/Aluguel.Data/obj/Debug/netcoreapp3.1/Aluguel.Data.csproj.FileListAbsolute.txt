@@ -3,3 +3,8 @@ C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Data\bin\Debug\ne
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Data\obj\Debug\netcoreapp3.1\Aluguel.Data.csprojAssemblyReference.cache
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Data\obj\Debug\netcoreapp3.1\Aluguel.Data.AssemblyInfoInputs.cache
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Data\obj\Debug\netcoreapp3.1\Aluguel.Data.AssemblyInfo.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Data\bin\Debug\netcoreapp3.1\Aluguel.Data.runtimeconfig.json
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Data\bin\Debug\netcoreapp3.1\Aluguel.Data.runtimeconfig.dev.json
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Data\bin\Debug\netcoreapp3.1\Aluguel.Data.pdb
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Data\obj\Debug\netcoreapp3.1\Aluguel.Data.dll
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Data\obj\Debug\netcoreapp3.1\Aluguel.Data.pdb
