@@ -7,9 +7,11 @@ namespace Aluguel.Dominio.Models
 {
   public  class Imovel
     {
+
+  
+
         public int ImovelId { get; set; }
         [Required]
-        [Display(Name ="Nome Imovel")]
         public string NomeImovel { get; set; }
 
         //Futuramente sera um Enum -----------
@@ -24,7 +26,6 @@ namespace Aluguel.Dominio.Models
         [Required]
         public int Numero { get; set; }
         [Required]
-        [Display(Name = "CEP")]
         public int Cep { get; set; }
 
 

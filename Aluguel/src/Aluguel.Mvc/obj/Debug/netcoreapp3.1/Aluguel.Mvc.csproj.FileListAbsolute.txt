@@ -165,7 +165,6 @@ C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\net
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Aluguel.Mvc.RazorCoreGenerate.cache
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Home\Financeiro.cshtml.g.cs
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ParcialViews\_footerRodape.cshtml.g.cs
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ParcialViews\_navBarTopo.cshtml.g.cs
@@ -182,3 +181,17 @@ C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\net
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\staticwebassets\Aluguel.Mvc.StaticWebAssets.xml
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Aluguel.Mvc.dll
 C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Aluguel.Mvc.pdb
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Locador\Create.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Locador\Delete.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Locador\Details.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Locador\Edit.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Locador\Index.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Imovel\Create.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Imovel\Delete.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Imovel\Details.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Imovel\Edit.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Imovel\Index.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
