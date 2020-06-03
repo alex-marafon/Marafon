@@ -6,7 +6,7 @@ using Aluguel.Dominio.Enums;
 
 namespace Aluguel.Dominio.Models
 {
-    class DadosPessoa
+  public  class DadosPessoa
     {
         [Required]
         public string Nome { get; set; }

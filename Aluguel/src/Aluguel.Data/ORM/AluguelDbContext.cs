@@ -2,6 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Aluguel.Dominio.Models;
+
+
 
 namespace Aluguel.Data.ORM
 {
@@ -11,5 +14,8 @@ namespace Aluguel.Data.ORM
         {
         
         }
+
+        public DbSet<Imovel> Imovels { get; set; }
+
     }
 }

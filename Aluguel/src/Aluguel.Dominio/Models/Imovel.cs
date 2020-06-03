@@ -5,19 +5,14 @@ using System.Text;
 
 namespace Aluguel.Dominio.Models
 {
-    class Imovel
+  public  class Imovel
     {
-        public Imovel()
-        {
-             var ImovelId = Guid.NewGuid();
-        }
-
-        public string ImovelId { get; set; }
+        public int ImovelId { get; set; }
         [Required]
         [Display(Name ="Nome Imovel")]
         public string NomeImovel { get; set; }
 
-        //Futuramente ser um Enum -----------
+        //Futuramente sera um Enum -----------
         public string Estado { get; set; } 
         public string Cidade { get; set; }
         //-----------------------------------
@@ -31,7 +26,6 @@ namespace Aluguel.Dominio.Models
         [Required]
         [Display(Name = "CEP")]
         public int Cep { get; set; }
-
 
 
     }
