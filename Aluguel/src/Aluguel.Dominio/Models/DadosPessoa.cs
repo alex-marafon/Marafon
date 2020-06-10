@@ -30,7 +30,6 @@ namespace Aluguel.Dominio.Models
         [Required]
         public decimal TelTestemunha { get; set; }
 
-
         //Concatenar Nome e Sobrenome - Retornar "Nome Completo"
 
     }

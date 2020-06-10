@@ -54,7 +54,7 @@ namespace Aluguel.Mvc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("LocadorId,Nome,SobreNome,Cpf,Rg,OrgaoEmissor,Profissao,EstadoCivil,Email,Tel,TelTestemunha")] Locador locador)
+        public async Task<IActionResult> Create([Bind("LocadorId,Status,Nome,SobreNome,Cpf,Rg,OrgaoEmissor,Profissao,EstadoCivil,Email,Tel,TelTestemunha")] Locador locador)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace Aluguel.Mvc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("LocadorId,Nome,SobreNome,Cpf,Rg,OrgaoEmissor,Profissao,EstadoCivil,Email,Tel,TelTestemunha")] Locador locador)
+        public async Task<IActionResult> Edit(int id, [Bind("LocadorId,Status,Nome,SobreNome,Cpf,Rg,OrgaoEmissor,Profissao,EstadoCivil,Email,Tel,TelTestemunha")] Locador locador)
         {
             if (id != locador.LocadorId)
             {

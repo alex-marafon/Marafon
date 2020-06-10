@@ -54,7 +54,7 @@ namespace Aluguel.Mvc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ImovelId,NomeImovel,Estado,Cidade,Bairro,Rua,Numero,Cep")] Imovel imovel)
+        public async Task<IActionResult> Create([Bind("ImovelId,NomeImovel,Cidade,Estado,Bairro,Rua,Numero,Cep,Status")] Imovel imovel)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace Aluguel.Mvc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ImovelId,NomeImovel,Estado,Cidade,Bairro,Rua,Numero,Cep")] Imovel imovel)
+        public async Task<IActionResult> Edit(int id, [Bind("ImovelId,NomeImovel,Cidade,Estado,Bairro,Rua,Numero,Cep,Status")] Imovel imovel)
         {
             if (id != imovel.ImovelId)
             {

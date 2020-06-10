@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Aluguel.Dominio.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -15,8 +16,8 @@ namespace Aluguel.Dominio.Models
         public string NomeImovel { get; set; }
 
         //Futuramente sera um Enum -----------
-        public string Estado { get; set; } 
-        public string Cidade { get; set; }
+        public string Cidade { get; set; } 
+        public string Estado { get; set; }
         //-----------------------------------
 
         [Required]
@@ -27,6 +28,10 @@ namespace Aluguel.Dominio.Models
         public int Numero { get; set; }
         [Required]
         public int Cep { get; set; }
+        [Required]
+        public bool Status { get; set; }
+
+        public virtual ICollection<Imovel> Imovels { get; set; }
 
 
     }

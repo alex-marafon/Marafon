@@ -19,6 +19,7 @@ namespace Aluguel.Data.ORM
         public DbSet<Imagem> Imagems { get; set; }
         public DbSet<Locador> Locadores { get; set; }
         public DbSet<Locatario> Locatarios { get; set; }
+        public DbSet<Contrato> Contratos { get; set; }
 
 
 
