@@ -34,7 +34,9 @@ namespace Aluguel.Mvc.Controllers
             }
 
             var imovel = await _context.Imovels
-                .FirstOrDefaultAsync(m => m.ImovelId == id);
+            .Where(s => s.Status == true)
+            .FirstOrDefaultAsync(m => m.ImovelId == id);
+
             if (imovel == null)
             {
                 return NotFound();
