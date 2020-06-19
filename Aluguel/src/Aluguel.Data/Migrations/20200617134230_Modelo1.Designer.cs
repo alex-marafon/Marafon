@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aluguel.Data.Migrations
 {
     [DbContext(typeof(AluguelDbContext))]
-    [Migration("20200610211216_teste")]
-    partial class teste
+    [Migration("20200617134230_Modelo1")]
+    partial class Modelo1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -95,6 +95,9 @@ namespace Aluguel.Data.Migrations
                     b.Property<string>("Cidade")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("ContratoId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Estado")
                         .HasColumnType("nvarchar(max)");
 
@@ -117,6 +120,8 @@ namespace Aluguel.Data.Migrations
 
                     b.HasKey("ImovelId");
 
+                    b.HasIndex("ContratoId");
+
                     b.HasIndex("ImovelId1");
 
                     b.ToTable("Imovels");
@@ -129,6 +134,9 @@ namespace Aluguel.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("ContratoId")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("Cpf")
                         .HasColumnType("decimal(18,2)");
 
@@ -137,9 +145,6 @@ namespace Aluguel.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("EstadoCivil")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("LocadorId1")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
@@ -172,7 +177,7 @@ namespace Aluguel.Data.Migrations
 
                     b.HasKey("LocadorId");
 
-                    b.HasIndex("LocadorId1");
+                    b.HasIndex("ContratoId");
 
                     b.ToTable("Locadores");
                 });
@@ -184,6 +189,9 @@ namespace Aluguel.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("ContratoId")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("Cpf")
                         .HasColumnType("decimal(18,2)");
 
@@ -192,9 +200,6 @@ namespace Aluguel.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("EstadoCivil")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("LocatarioId1")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
@@ -227,7 +232,7 @@ namespace Aluguel.Data.Migrations
 
                     b.HasKey("LocatarioId");
 
-                    b.HasIndex("LocatarioId1");
+                    b.HasIndex("ContratoId");
 
                     b.ToTable("Locatarios");
                 });
@@ -255,6 +260,10 @@ namespace Aluguel.Data.Migrations
 
             modelBuilder.Entity("Aluguel.Dominio.Models.Imovel", b =>
                 {
+                    b.HasOne("Aluguel.Dominio.Models.Contrato", null)
+                        .WithMany("Imovels")
+                        .HasForeignKey("ContratoId");
+
                     b.HasOne("Aluguel.Dominio.Models.Imovel", null)
                         .WithMany("Imovels")
                         .HasForeignKey("ImovelId1");
@@ -262,16 +271,16 @@ namespace Aluguel.Data.Migrations
 
             modelBuilder.Entity("Aluguel.Dominio.Models.Locador", b =>
                 {
-                    b.HasOne("Aluguel.Dominio.Models.Locador", null)
+                    b.HasOne("Aluguel.Dominio.Models.Contrato", null)
                         .WithMany("Locadores")
-                        .HasForeignKey("LocadorId1");
+                        .HasForeignKey("ContratoId");
                 });
 
             modelBuilder.Entity("Aluguel.Dominio.Models.Locatario", b =>
                 {
-                    b.HasOne("Aluguel.Dominio.Models.Locatario", null)
+                    b.HasOne("Aluguel.Dominio.Models.Contrato", null)
                         .WithMany("Locatarios")
-                        .HasForeignKey("LocatarioId1");
+                        .HasForeignKey("ContratoId");
                 });
 #pragma warning restore 612, 618
         }

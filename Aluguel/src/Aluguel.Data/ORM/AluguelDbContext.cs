@@ -1,17 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Aluguel.Dominio.Models;
+﻿using Aluguel.Dominio.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 
 namespace Aluguel.Data.ORM
 {
-   public class AluguelDbContext : DbContext
+    public class AluguelDbContext : DbContext
     {
-        public AluguelDbContext(DbContextOptions<AluguelDbContext> options) 
-            : base(options) 
+        public AluguelDbContext(DbContextOptions<AluguelDbContext> options)
+            : base(options)
         {
         }
 

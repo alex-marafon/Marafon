@@ -1,6 +1,7 @@
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Dominio\bin\Debug\netcoreapp3.1\Aluguel.Dominio.deps.json
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Dominio\bin\Debug\netcoreapp3.1\Aluguel.Dominio.dll
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Dominio\bin\Debug\netcoreapp3.1\Aluguel.Dominio.pdb
+C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Dominio\obj\Debug\netcoreapp3.1\Aluguel.Dominio.csprojAssemblyReference.cache
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Dominio\obj\Debug\netcoreapp3.1\Aluguel.Dominio.AssemblyInfoInputs.cache
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Dominio\obj\Debug\netcoreapp3.1\Aluguel.Dominio.AssemblyInfo.cs
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Dominio\obj\Debug\netcoreapp3.1\Aluguel.Dominio.dll

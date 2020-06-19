@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Aluguel.Data.Migrations
 {
-    public partial class teste : Migration
+    public partial class Modelo1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -34,6 +34,7 @@ namespace Aluguel.Data.Migrations
                     Numero = table.Column<int>(nullable: false),
                     Cep = table.Column<int>(nullable: false),
                     Status = table.Column<bool>(nullable: false),
+                    ContratoId = table.Column<int>(nullable: true),
                     ImovelId1 = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -64,17 +65,11 @@ namespace Aluguel.Data.Migrations
                     Tel = table.Column<decimal>(nullable: false),
                     TelTestemunha = table.Column<decimal>(nullable: false),
                     Status = table.Column<bool>(nullable: false),
-                    LocadorId1 = table.Column<int>(nullable: true)
+                    ContratoId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Locadores", x => x.LocadorId);
-                    table.ForeignKey(
-                        name: "FK_Locadores_Locadores_LocadorId1",
-                        column: x => x.LocadorId1,
-                        principalTable: "Locadores",
-                        principalColumn: "LocadorId",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -94,17 +89,11 @@ namespace Aluguel.Data.Migrations
                     Tel = table.Column<decimal>(nullable: false),
                     TelTestemunha = table.Column<decimal>(nullable: false),
                     Status = table.Column<bool>(nullable: false),
-                    LocatarioId1 = table.Column<int>(nullable: true)
+                    ContratoId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Locatarios", x => x.LocatarioId);
-                    table.ForeignKey(
-                        name: "FK_Locatarios_Locatarios_LocatarioId1",
-                        column: x => x.LocatarioId1,
-                        principalTable: "Locatarios",
-                        principalColumn: "LocatarioId",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -161,25 +150,63 @@ namespace Aluguel.Data.Migrations
                 column: "imovelId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Imovels_ContratoId",
+                table: "Imovels",
+                column: "ContratoId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Imovels_ImovelId1",
                 table: "Imovels",
                 column: "ImovelId1");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Locadores_LocadorId1",
+                name: "IX_Locadores_ContratoId",
                 table: "Locadores",
-                column: "LocadorId1");
+                column: "ContratoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Locatarios_LocatarioId1",
+                name: "IX_Locatarios_ContratoId",
                 table: "Locatarios",
-                column: "LocatarioId1");
+                column: "ContratoId");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Imovels_Contratos_ContratoId",
+                table: "Imovels",
+                column: "ContratoId",
+                principalTable: "Contratos",
+                principalColumn: "ContratoId",
+                onDelete: ReferentialAction.Restrict);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Locadores_Contratos_ContratoId",
+                table: "Locadores",
+                column: "ContratoId",
+                principalTable: "Contratos",
+                principalColumn: "ContratoId",
+                onDelete: ReferentialAction.Restrict);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Locatarios_Contratos_ContratoId",
+                table: "Locatarios",
+                column: "ContratoId",
+                principalTable: "Contratos",
+                principalColumn: "ContratoId",
+                onDelete: ReferentialAction.Restrict);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Contratos");
+            migrationBuilder.DropForeignKey(
+                name: "FK_Contratos_Locadores_LocadorId",
+                table: "Contratos");
+
+            migrationBuilder.DropForeignKey(
+                name: "FK_Contratos_Locatarios_LocatarioId",
+                table: "Contratos");
+
+            migrationBuilder.DropForeignKey(
+                name: "FK_Contratos_Imovels_imovelId",
+                table: "Contratos");
 
             migrationBuilder.DropTable(
                 name: "Imagems");
@@ -192,6 +219,9 @@ namespace Aluguel.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Imovels");
+
+            migrationBuilder.DropTable(
+                name: "Contratos");
         }
     }
 }

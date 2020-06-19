@@ -4,57 +4,11 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
 <h4>Contrato</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="LocadorId" class="control-label"></label>
-                <select asp-for="LocadorId" class ="form-control" asp-items="ViewBag.LocadorId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="LocatarioId" class="control-label"></label>
-                <select asp-for="LocatarioId" class ="form-control" asp-items="ViewBag.LocatarioId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="imovelId" class="control-label"></label>
-                <select asp-for="imovelId" class ="form-control" asp-items="ViewBag.imovelId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataContrato" class="control-label"></label>
-                <input asp-for="DataContrato" class="form-control" />
-                <span asp-validation-for="DataContrato" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DiaVencimentoAlguel" class="control-label"></label>
-                <input asp-for="DiaVencimentoAlguel" class="form-control" />
-                <span asp-validation-for="DiaVencimentoAlguel" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataInicio" class="control-label"></label>
-                <input asp-for="DataInicio" class="form-control" />
-                <span asp-validation-for="DataInicio" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataFim" class="control-label"></label>
-                <input asp-for="DataFim" class="form-control" />
-                <span asp-validation-for="DataFim" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Status" /> @Html.DisplayNameFor(model => model.Status)
-                </label>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+
+@await Html.PartialAsync("_create_edit")
+
 
 <div>
     <a asp-action="Index">Back to List</a>

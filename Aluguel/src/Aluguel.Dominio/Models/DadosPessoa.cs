@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-using Aluguel.Dominio.Enums;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Aluguel.Dominio.Models
 {
-  public  class DadosPessoa
+    public class DadosPessoa
     {
+
+
         [Required]
         public string Nome { get; set; }
         [Required]
@@ -20,9 +18,11 @@ namespace Aluguel.Dominio.Models
         [Display(Name = "Orgão Emissor")]
         public string OrgaoEmissor { get; set; }
         [Required]
-        [Display(Name ="Profissão")]
+        [Display(Name = "Profissão")]
         public string Profissao { get; set; }
-        public EstadoCivil EstadoCivil { get; set; }
+
+        public string EstadoCivil { get; set; }
+
         [Required]
         public string Email { get; set; }
         [Required]

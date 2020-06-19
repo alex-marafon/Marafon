@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Aluguel.Data.ORM;
+using Aluguel.Dominio.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Aluguel.Data.ORM;
-using Aluguel.Dominio.Models;
 
 namespace Aluguel.Mvc.Controllers
 {
@@ -53,14 +50,15 @@ namespace Aluguel.Mvc.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("LocatarioId,Status,Nome,SobreNome,Cpf,Rg,OrgaoEmissor,Profissao,EstadoCivil,Email,Tel,TelTestemunha")] Locatario locatario)
+        [ValidateAntiForgeryToken]           //[Bind("LocatarioId,Status,Nome,SobreNome,Cpf,Rg,OrgaoEmissor,Profissao,EstadoCivil,Email,Tel,TelTestemunha")]
+        public async Task<IActionResult> Create( Locatario locatario)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(locatario);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
             return View(locatario);
         }

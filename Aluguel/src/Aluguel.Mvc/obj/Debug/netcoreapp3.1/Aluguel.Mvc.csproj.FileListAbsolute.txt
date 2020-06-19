@@ -205,3 +205,5 @@ C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\net
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\staticwebassets\Aluguel.Mvc.StaticWebAssets.xml
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Aluguel.Mvc.dll
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Aluguel.Mvc.pdb
+C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Contrato\_create_edit.cshtml.g.cs
+C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Contrato\_delete_detail.cshtml.g.cs

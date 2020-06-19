@@ -4,14 +4,16 @@ using Aluguel.Data.ORM;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Aluguel.Data.Migrations
 {
     [DbContext(typeof(AluguelDbContext))]
-    partial class AluguelDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200619193605_modelo2")]
+    partial class modelo2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

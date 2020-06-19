@@ -1,5 +1,3 @@
-using System;
-
 namespace Aluguel.Mvc.Models
 {
     public class ErrorViewModel
