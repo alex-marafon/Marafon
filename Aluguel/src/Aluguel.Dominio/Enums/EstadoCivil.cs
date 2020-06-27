@@ -2,7 +2,7 @@
 {
     public enum EstadoCivil
     {
-        Viuvo = 1,
+        Outro = 1,
         Casado = 2,
         Solteiro = 3
 

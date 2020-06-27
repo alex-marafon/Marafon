@@ -1,4 +1,5 @@
-﻿@model Aluguel.Dominio.Models.Locatario
+﻿@using Aluguel.Dominio.Enums
+@model Aluguel.Dominio.Models.Locatario
 
 @{
     ViewData["Title"] = "Create";
@@ -44,12 +45,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="Profissao" class="control-label"></label>
-                <input asp-for="Profissao" class="form-control" />
+                <input asp-for="Profissao"  class="form-control" />
                 <span asp-validation-for="Profissao" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EstadoCivil" class="control-label"></label>
-                <select asp-for="EstadoCivil" class="form-control"></select>
+                <select asp-for="EstadoCivil" asp-items="Html.GetEnumSelectList<EstadoCivil>()" placeholder="Escolha uma Opção" class="form-control"></select>
                 <span asp-validation-for="EstadoCivil" class="text-danger"></span>
             </div>
             <div class="form-group">

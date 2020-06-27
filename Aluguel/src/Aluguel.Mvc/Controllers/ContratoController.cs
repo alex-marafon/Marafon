@@ -20,7 +20,15 @@ namespace Aluguel.Mvc.Controllers
         // GET: Contrato
         public async Task<IActionResult> Index()
         {
-            var aluguelDbContext = _context.Contratos.Include(c => c.Imovel).Include(c => c.Locador).Include(c => c.Locatario);
+            var aluguelDbContext = _context.Contratos
+                .Include(c => c.Imovel)
+                .Include(c => c.Locador)
+                .Include(c => c.Locatario)
+                    //.Where(c => c.Imovel.Status == false)
+                    //.Where(c => c.Locador.Status == false)
+                    //.Where(c => c.Locatario.Status == false)
+                    ;
+         
             return View(await aluguelDbContext.ToListAsync());
         }
 
@@ -36,6 +44,11 @@ namespace Aluguel.Mvc.Controllers
                 .Include(c => c.Imovel)
                 .Include(c => c.Locador)
                 .Include(c => c.Locatario)
+               
+                .Where(c =>c.Imovel.Status == false)
+                .Where(c =>c.Locador.Status == true)
+                .Where(c =>c.Locatario.Status == false)
+                
                 .FirstOrDefaultAsync(m => m.ContratoId == id);
             if (contrato == null)
             {
@@ -48,9 +61,21 @@ namespace Aluguel.Mvc.Controllers
         // GET: Contrato/Create
         public IActionResult Create()
         {
-            ViewData["imovelId"] = new SelectList(_context.Imovels, "ImovelId", "Bairro");
-            ViewData["LocadorId"] = new SelectList(_context.Locadores, "LocadorId", "Email");
-            ViewData["LocatarioId"] = new SelectList(_context.Locatarios, "LocatarioId", "Email");
+            if (true)
+            {
+                //var locad = _context.Locatarios.Select("");
+
+                //var contrato = await _context.Contratos
+                //   .Include(c => c.Imovel)
+                //   .Include(c => c.Locador)
+                //   .Include(c => c.Locatario)
+
+
+
+            }
+            ViewData["imovel"] = new SelectList(_context.Imovels, "ImovelId", "NomeImovel");
+            ViewData["Locador"] = new SelectList(_context.Locadores, "LocadorId", "Nome");
+            ViewData["Locatario"] = new SelectList(_context.Locatarios, "LocatarioId", "Nome");
             return View();
         }
 
@@ -67,9 +92,9 @@ namespace Aluguel.Mvc.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["imovelId"] = new SelectList(_context.Imovels, "ImovelId", "Bairro", contrato.imovelId);
-            ViewData["LocadorId"] = new SelectList(_context.Locadores, "LocadorId", "Email", contrato.LocadorId);
-            ViewData["LocatarioId"] = new SelectList(_context.Locatarios, "LocatarioId", "Email", contrato.LocatarioId);
+            ViewData["imovel"] = new SelectList(_context.Imovels, "ImovelId", "NomeImovel", contrato.imovelId);
+            ViewData["Locador"] = new SelectList(_context.Locadores, "LocadorId", "Nome", contrato.LocadorId);
+            ViewData["Locatario"] = new SelectList(_context.Locatarios, "LocatarioId", "Nome", contrato.LocatarioId);
             return View(contrato);
         }
 
@@ -86,9 +111,9 @@ namespace Aluguel.Mvc.Controllers
             {
                 return NotFound();
             }
-            ViewData["imovelId"] = new SelectList(_context.Imovels, "ImovelId", "Bairro", contrato.imovelId);
-            ViewData["LocadorId"] = new SelectList(_context.Locadores, "LocadorId", "Email", contrato.LocadorId);
-            ViewData["LocatarioId"] = new SelectList(_context.Locatarios, "LocatarioId", "Email", contrato.LocatarioId);
+            ViewData["imovel"] = new SelectList(_context.Imovels, "ImovelId", "NomeImovel", contrato.imovelId);
+            ViewData["Locador"] = new SelectList(_context.Locadores, "LocadorId", "Nome", contrato.LocadorId);
+            ViewData["Locatario"] = new SelectList(_context.Locatarios, "LocatarioId", "Nome", contrato.LocatarioId);
             return View(contrato);
         }
 
@@ -124,9 +149,9 @@ namespace Aluguel.Mvc.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["imovelId"] = new SelectList(_context.Imovels, "ImovelId", "Bairro", contrato.imovelId);
-            ViewData["LocadorId"] = new SelectList(_context.Locadores, "LocadorId", "Email", contrato.LocadorId);
-            ViewData["LocatarioId"] = new SelectList(_context.Locatarios, "LocatarioId", "Email", contrato.LocatarioId);
+            ViewData["imovel"] = new SelectList(_context.Imovels, "ImovelId", "NomeImovel", contrato.imovelId);
+            ViewData["Locador"] = new SelectList(_context.Locadores, "LocadorId", "Nome", contrato.LocadorId);
+            ViewData["Locatario"] = new SelectList(_context.Locatarios, "LocatarioId", "Nome", contrato.LocatarioId);
             return View(contrato);
         }
 
