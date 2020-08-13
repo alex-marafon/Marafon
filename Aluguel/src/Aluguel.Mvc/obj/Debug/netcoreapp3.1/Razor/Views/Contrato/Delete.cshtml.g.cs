@@ -12,16 +12,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
 #line 1 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\_ViewImports.cshtml"
 using Aluguel.Mvc;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\_ViewImports.cshtml"
 using Aluguel.Mvc.Models;
 
 #line default
 #line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fc7adb2d677d49b36d8d35c57bbb41346c8bcfa1", @"/Views/Contrato/Delete.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fa012f05fdf587cc92e18d1a20aa6cea385586c9", @"/Views/_ViewImports.cshtml")]
     public class Views_Contrato_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Aluguel.Dominio.Models.Contrato>
@@ -57,33 +61,39 @@ using Aluguel.Mvc.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n");
+#nullable restore
 #line 3 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Contrato\Delete.cshtml"
   
     ViewData["Title"] = "Delete";
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n\r\n<h3>Você esta certo em querer deletar este registro?</h3>\r\n<div>\r\n    <h4>Contrato</h4>\r\n    <hr />\r\n\r\n    ");
+#nullable restore
 #line 13 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Contrato\Delete.cshtml"
 Write(await Html.PartialAsync("_delete_detail"));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc7adb2d677d49b36d8d35c57bbb41346c8bcfa14949", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc7adb2d677d49b36d8d35c57bbb41346c8bcfa15101", async() => {
                 WriteLiteral("\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fc7adb2d677d49b36d8d35c57bbb41346c8bcfa15215", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fc7adb2d677d49b36d8d35c57bbb41346c8bcfa15367", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string)__tagHelperAttribute_0.Value;
                 __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_0);
+#nullable restore
 #line 16 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Contrato\Delete.cshtml"
 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.ContratoId);
 
 #line default
 #line hidden
+#nullable disable
                 __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
                 await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                 if (!__tagHelperExecutionContext.Output.IsContentModified)
@@ -93,7 +103,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n        <input type=\"submit\" value=\"Delete\" class=\"btn btn-danger\" /> |\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc7adb2d677d49b36d8d35c57bbb41346c8bcfa16987", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc7adb2d677d49b36d8d35c57bbb41346c8bcfa17177", async() => {
                     WriteLiteral("Back to List");
                 }
                 );

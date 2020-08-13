@@ -12,16 +12,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
 #line 1 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\_ViewImports.cshtml"
 using Aluguel.Mvc;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\_ViewImports.cshtml"
 using Aluguel.Mvc.Models;
 
 #line default
 #line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e0059d1a2f102991dc220f739b594b93153e53b4", @"/Views/Shared/ParcialViews/_footerRodape.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fa012f05fdf587cc92e18d1a20aa6cea385586c9", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_ParcialViews__footerRodape : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
@@ -54,7 +58,7 @@ using Aluguel.Mvc.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<div class=\"container\">\r\n    &copy; 2020 - Marafon Systen - ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0059d1a2f102991dc220f739b594b93153e53b44099", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0059d1a2f102991dc220f739b594b93153e53b44175", async() => {
                 WriteLiteral("Todos os direitos reservados");
             }
             );

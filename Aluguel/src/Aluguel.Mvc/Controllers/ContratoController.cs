@@ -44,9 +44,9 @@ namespace Aluguel.Mvc.Controllers
                 .Include(c => c.Imovel)
                 .Include(c => c.Locador)
                 .Include(c => c.Locatario)
-                    .Where(c =>c.Imovel.Status == false)
-                    .Where(c =>c.Locador.Status == false)
-                    .Where(c =>c.Locatario.Status == false)
+                    //.Where(c =>c.Imovel.Status == false)
+                    //.Where(c =>c.Locador.Status == false)
+                    //.Where(c =>c.Locatario.Status == false)
                 
                 .FirstOrDefaultAsync(m => m.ContratoId == id);
             if (contrato == null)
@@ -60,18 +60,7 @@ namespace Aluguel.Mvc.Controllers
         // GET: Contrato/Create
         public IActionResult Create()
         {
-            if (true)
-            {
-                //var locad = _context.Locatarios.Select("");
-
-                //var contrato = await _context.Contratos
-                //   .Include(c => c.Imovel)
-                //   .Include(c => c.Locador)
-                //   .Include(c => c.Locatario)
-
-
-
-            }
+            
             ViewData["imovel"] = new SelectList(_context.Imovels.Where(c => c.Status == false), "ImovelId", "NomeImovel");
             ViewData["Locador"] = new SelectList(_context.Locadores.Where(c => c.Status == false), "LocadorId", "Nome");
             ViewData["Locatario"] = new SelectList(_context.Locatarios.Where(c => c.Status == false), "LocatarioId", "Nome");

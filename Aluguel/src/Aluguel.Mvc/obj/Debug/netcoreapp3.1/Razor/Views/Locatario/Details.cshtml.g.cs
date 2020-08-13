@@ -12,16 +12,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
 #line 1 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\_ViewImports.cshtml"
 using Aluguel.Mvc;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\_ViewImports.cshtml"
 using Aluguel.Mvc.Models;
 
 #line default
 #line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"050fdffa19a7b3f6c125f3a01ac18f714087000d", @"/Views/Locatario/Details.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fa012f05fdf587cc92e18d1a20aa6cea385586c9", @"/Views/_ViewImports.cshtml")]
     public class Views_Locatario_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Aluguel.Dominio.Models.Locatario>
@@ -53,146 +57,192 @@ using Aluguel.Mvc.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n");
+#nullable restore
 #line 3 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
   
     ViewData["Title"] = "Details";
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n<h1>Details</h1>\r\n\r\n<div>\r\n    <h4>Locatario</h4>\r\n    <hr />\r\n    <dl class=\"row\">\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 14 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.Status));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 17 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.Status));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 20 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.Nome));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 23 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.Nome));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 26 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.SobreNome));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 29 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.SobreNome));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 32 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.Cpf));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 35 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.Cpf));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 38 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.Rg));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 41 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.Rg));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 44 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.OrgaoEmissor));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 47 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.OrgaoEmissor));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 50 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.Profissao));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 53 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.Profissao));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 56 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.EstadoCivil));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 59 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.EstadoCivil));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 62 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.Email));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 65 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.Email));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 68 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.Tel));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 71 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.Tel));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 74 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayNameFor(model => model.TelTestemunha));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 77 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
        Write(Html.DisplayFor(model => model.TelTestemunha));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "050fdffa19a7b3f6c125f3a01ac18f714087000d10646", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "050fdffa19a7b3f6c125f3a01ac18f714087000d11596", async() => {
                 WriteLiteral("Edit");
             }
             );
@@ -205,11 +255,13 @@ using Aluguel.Mvc.Models;
                 throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
             }
             BeginWriteTagHelperAttribute();
+#nullable restore
 #line 82 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Details.cshtml"
                            WriteLiteral(Model.LocatarioId);
 
 #line default
 #line hidden
+#nullable disable
             __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
             __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = __tagHelperStringValueBuffer;
             __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -221,7 +273,7 @@ using Aluguel.Mvc.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" |\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "050fdffa19a7b3f6c125f3a01ac18f714087000d12778", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "050fdffa19a7b3f6c125f3a01ac18f714087000d13766", async() => {
                 WriteLiteral("Back to List");
             }
             );

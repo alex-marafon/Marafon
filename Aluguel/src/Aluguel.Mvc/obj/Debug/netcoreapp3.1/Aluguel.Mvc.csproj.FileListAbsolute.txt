@@ -208,3 +208,5 @@ C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\net
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Aluguel.Mvc.dll
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Aluguel.Mvc.pdb
 C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\bin\Debug\netcoreapp3.1\Models\libman.json
+C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Aluguel.Mvc.csproj.CoreCompileInputs.cache
+C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\obj\Debug\netcoreapp3.1\Aluguel.Mvc.genruntimeconfig.cache

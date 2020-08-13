@@ -12,16 +12,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
 #line 1 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\_ViewImports.cshtml"
 using Aluguel.Mvc;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\_ViewImports.cshtml"
 using Aluguel.Mvc.Models;
 
 #line default
 #line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3d087dc6a1871c3cd2c357eaf0abce8b59b5b7fc", @"/Views/Locatario/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fa012f05fdf587cc92e18d1a20aa6cea385586c9", @"/Views/_ViewImports.cshtml")]
     public class Views_Locatario_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Aluguel.Dominio.Models.Locatario>>
@@ -55,14 +59,16 @@ using Aluguel.Mvc.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n");
+#nullable restore
 #line 3 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
   
     ViewData["Title"] = "Index";
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n\r\n<p>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d087dc6a1871c3cd2c357eaf0abce8b59b5b7fc4518", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d087dc6a1871c3cd2c357eaf0abce8b59b5b7fc4632", async() => {
                 WriteLiteral("Novo Cadastro");
             }
             );
@@ -78,90 +84,116 @@ using Aluguel.Mvc.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n</p>\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th>\r\n                    ");
+#nullable restore
 #line 15 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
                Write(Html.DisplayNameFor(model => model.Status));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n                </th>\r\n            <th>\r\n                ");
+#nullable restore
 #line 18 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.Nome));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n            </th>\r\n");
             WriteLiteral("            <th>\r\n                ");
+#nullable restore
 #line 24 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.Cpf));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n            </th>\r\n");
             WriteLiteral("            <th>\r\n                ");
+#nullable restore
 #line 39 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.Email));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n            </th>\r\n            <th>\r\n                ");
+#nullable restore
 #line 42 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.Tel));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n            </th>\r\n            <th>\r\n                ");
+#nullable restore
 #line 45 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.TelTestemunha));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n            </th>\r\n            <th></th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n");
+#nullable restore
 #line 51 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
          foreach (var item in Model)
         {
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("            <tr>\r\n                <td>\r\n                        ");
+#nullable restore
 #line 55 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
                    Write(Html.DisplayFor(modelItem => item.Status));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n                    </td>\r\n                <td>\r\n                    ");
+#nullable restore
 #line 58 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
                Write(Html.DisplayFor(modelItem => item.Nome));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n                </td>\r\n");
             WriteLiteral("                <td>\r\n                    ");
+#nullable restore
 #line 64 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
                Write(Html.DisplayFor(modelItem => item.Cpf));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n                </td>\r\n");
             WriteLiteral("                <td>\r\n                    ");
+#nullable restore
 #line 79 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
                Write(Html.DisplayFor(modelItem => item.Email));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
+#nullable restore
 #line 82 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
                Write(Html.DisplayFor(modelItem => item.Tel));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
+#nullable restore
 #line 85 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
                Write(Html.DisplayFor(modelItem => item.TelTestemunha));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d087dc6a1871c3cd2c357eaf0abce8b59b5b7fc9864", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d087dc6a1871c3cd2c357eaf0abce8b59b5b7fc10472", async() => {
                 WriteLiteral("Edit");
             }
             );
@@ -174,11 +206,13 @@ using Aluguel.Mvc.Models;
                 throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
             }
             BeginWriteTagHelperAttribute();
+#nullable restore
 #line 88 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
                                            WriteLiteral(item.LocatarioId);
 
 #line default
 #line hidden
+#nullable disable
             __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
             __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = __tagHelperStringValueBuffer;
             __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -190,7 +224,7 @@ using Aluguel.Mvc.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" |\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d087dc6a1871c3cd2c357eaf0abce8b59b5b7fc12024", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d087dc6a1871c3cd2c357eaf0abce8b59b5b7fc12671", async() => {
                 WriteLiteral("Details");
             }
             );
@@ -203,11 +237,13 @@ using Aluguel.Mvc.Models;
                 throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
             }
             BeginWriteTagHelperAttribute();
+#nullable restore
 #line 89 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
                                               WriteLiteral(item.LocatarioId);
 
 #line default
 #line hidden
+#nullable disable
             __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
             __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = __tagHelperStringValueBuffer;
             __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -219,7 +255,7 @@ using Aluguel.Mvc.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" |\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d087dc6a1871c3cd2c357eaf0abce8b59b5b7fc14191", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d087dc6a1871c3cd2c357eaf0abce8b59b5b7fc14876", async() => {
                 WriteLiteral("Delete");
             }
             );
@@ -232,11 +268,13 @@ using Aluguel.Mvc.Models;
                 throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
             }
             BeginWriteTagHelperAttribute();
+#nullable restore
 #line 90 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
                                              WriteLiteral(item.LocatarioId);
 
 #line default
 #line hidden
+#nullable disable
             __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
             __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = __tagHelperStringValueBuffer;
             __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -248,11 +286,13 @@ using Aluguel.Mvc.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </td>\r\n            </tr>\r\n");
+#nullable restore
 #line 93 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\Locatario\Index.cshtml"
         }
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("    </tbody>\r\n</table>\r\n");
         }
         #pragma warning restore 1998

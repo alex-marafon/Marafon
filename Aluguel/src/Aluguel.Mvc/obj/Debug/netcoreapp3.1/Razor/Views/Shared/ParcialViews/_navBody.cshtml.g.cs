@@ -12,16 +12,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
 #line 1 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\_ViewImports.cshtml"
 using Aluguel.Mvc;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\alex.marafon\Source\Repos\Marafon\Aluguel\src\Aluguel.Mvc\Views\_ViewImports.cshtml"
 using Aluguel.Mvc.Models;
 
 #line default
 #line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c440092f6ebb0fcc280365fbf2a0b362a6476ed9", @"/Views/Shared/ParcialViews/_navBody.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fa012f05fdf587cc92e18d1a20aa6cea385586c9", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_ParcialViews__navBody : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
@@ -74,7 +78,7 @@ using Aluguel.Mvc.Models;
 
 ");
             WriteLiteral("        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c440092f6ebb0fcc280365fbf2a0b362a6476ed94483", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c440092f6ebb0fcc280365fbf2a0b362a6476ed94559", async() => {
                 WriteLiteral("\r\n            <input class=\"form-control mr-sm-2\" type=\"text\" />\r\n            <button class=\"btn btn-primary my-2 my-sm-0\" type=\"submit\">\r\n                Search\r\n            </button>\r\n        ");
             }
             );
