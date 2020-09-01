@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aluguel.Data.Migrations
 {
     [DbContext(typeof(AluguelDbContext))]
-    [Migration("20200812144710_PopulaDb")]
+    [Migration("20200901151319_PopulaDb")]
     partial class PopulaDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
